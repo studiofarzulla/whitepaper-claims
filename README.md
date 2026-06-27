@@ -1,4 +1,4 @@
-# tensor-defi: Are Whitepaper Claims Reflected in Market Structure?
+# whitepaper-claims: Are Whitepaper Claims Reflected in Market Structure?
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17917922.svg)](https://doi.org/10.5281/zenodo.17917922)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
@@ -42,7 +42,7 @@ This is framed as a **method plus a cautionary tale**, not a verdict about narra
 ## Repository Structure
 
 ```
-tensor-defi/
+whitepaper-claims/
 ├── src/                      # Python modules
 │   ├── nlp/                  # zero-shot / embedding / LLM classification
 │   ├── alignment/            # Procrustes alignment, Tucker's φ
@@ -65,8 +65,8 @@ tensor-defi/
 ## Installation
 
 ```bash
-git clone https://github.com/studiofarzulla/tensor-defi.git
-cd tensor-defi
+git clone https://github.com/studiofarzulla/whitepaper-claims.git
+cd whitepaper-claims
 python -m venv venv && source venv/bin/activate
 pip install -r requirements.txt
 ```
