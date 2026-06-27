@@ -49,3 +49,11 @@ Thumbs.db
 .claude-flow/
 .swarm/
 paper/.claude-flow/
+
+# Internal rebuild scaffolding (Jun 2026) — NOT for publication
+data/_quarantine_broken_*/
+outputs/_pre_rerun_backup_*/
+outputs/nlp/_stale_n38_superseded/
+*.bak
+*.bak-*
+.pytest_cache/

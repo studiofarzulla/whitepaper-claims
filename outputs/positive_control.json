@@ -1,0 +1,234 @@
+{
+  "description": "Positive-control / power simulation for the whitepaper-claims Procrustes + permutation pipeline. Quantifies detection power vs true cross-domain congruence at n=43 and the minimum detectable effect.",
+  "generated_utc": "2026-06-27T18:42:24.134184+00:00",
+  "runtime_seconds": 78.5,
+  "config": {
+    "reps": 500,
+    "perms": 200,
+    "grid": [
+      0.2,
+      0.3,
+      0.5,
+      0.65,
+      0.8
+    ],
+    "seed": 20260627,
+    "factor_source": "real CP asset factors (clean-43)",
+    "n_entities": 43,
+    "n_factor_columns": 2,
+    "claims_dim": 10,
+    "rho_claims": 0.314,
+    "rho_factors": 0.95,
+    "alpha": 0.05,
+    "common_symbols": [
+      "AAVE",
+      "ADA",
+      "ALGO",
+      "API3",
+      "APT",
+      "ARB",
+      "ATOM",
+      "AVAX",
+      "BAND",
+      "BTC",
+      "COMP",
+      "CRV",
+      "DOT",
+      "EGLD",
+      "ENJ",
+      "ETH",
+      "FIL",
+      "FTM",
+      "GRT",
+      "HBAR",
+      "ICP",
+      "IMX",
+      "LDO",
+      "LINK",
+      "LPT",
+      "MANA",
+      "MKR",
+      "NEAR",
+      "OCEAN",
+      "OP",
+      "POL",
+      "RENDER",
+      "RPL",
+      "SAND",
+      "SC",
+      "SNX",
+      "SOL",
+      "STORJ",
+      "SUI",
+      "TRB",
+      "UNI",
+      "XMR",
+      "ZEC"
+    ]
+  },
+  "pipeline": {
+    "estimator": "src/alignment/procrustes.py :: ProcrustesAlignment.orthogonal_procrustes",
+    "test": "src/alignment/congruence.py :: CongruenceCoefficient.permutation_test (row-permutation of target, one-tailed p on mean Tucker phi)",
+    "note": "pipeline reused as-is; nothing re-implemented"
+  },
+  "scenarios": {
+    "ideal_reliability_1.0": {
+      "reliability": 1.0,
+      "cells": [
+        {
+          "true_phi": 0.2,
+          "reliability": 1.0,
+          "reps": 500,
+          "perms": 200,
+          "power": 0.314,
+          "power_se": 0.020755914819636352,
+          "mean_recovered_phi_pipeline": 0.04685825172894586,
+          "mean_recovered_phi_factor_cols": 0.23429125864472927,
+          "n_detections": 157
+        },
+        {
+          "true_phi": 0.3,
+          "reliability": 1.0,
+          "reps": 500,
+          "perms": 200,
+          "power": 0.618,
+          "power_se": 0.02172905888436036,
+          "mean_recovered_phi_pipeline": 0.06125270977230621,
+          "mean_recovered_phi_factor_cols": 0.3062635488615309,
+          "n_detections": 309
+        },
+        {
+          "true_phi": 0.5,
+          "reliability": 1.0,
+          "reps": 500,
+          "perms": 200,
+          "power": 0.988,
+          "power_se": 0.004869496893930627,
+          "mean_recovered_phi_pipeline": 0.10018749222212943,
+          "mean_recovered_phi_factor_cols": 0.5009374611106471,
+          "n_detections": 494
+        },
+        {
+          "true_phi": 0.65,
+          "reliability": 1.0,
+          "reps": 500,
+          "perms": 200,
+          "power": 1.0,
+          "power_se": 0.0,
+          "mean_recovered_phi_pipeline": 0.13118127307488062,
+          "mean_recovered_phi_factor_cols": 0.655906365374403,
+          "n_detections": 500
+        },
+        {
+          "true_phi": 0.8,
+          "reliability": 1.0,
+          "reps": 500,
+          "perms": 200,
+          "power": 1.0,
+          "power_se": 0.0,
+          "mean_recovered_phi_pipeline": 0.1612731322134743,
+          "mean_recovered_phi_factor_cols": 0.8063656610673715,
+          "n_detections": 500
+        }
+      ],
+      "mde_power80": 0.3983783783783784
+    },
+    "realistic_reliability_0.314": {
+      "reliability": 0.314,
+      "cells": [
+        {
+          "true_phi": 0.2,
+          "reliability": 0.314,
+          "reps": 500,
+          "perms": 200,
+          "power": 0.104,
+          "power_se": 0.013651666564928987,
+          "mean_recovered_phi_pipeline": 0.03550915381087067,
+          "mean_recovered_phi_factor_cols": 0.1775457690543534,
+          "n_detections": 52
+        },
+        {
+          "true_phi": 0.3,
+          "reliability": 0.314,
+          "reps": 500,
+          "perms": 200,
+          "power": 0.202,
+          "power_se": 0.01795527777562909,
+          "mean_recovered_phi_pipeline": 0.04113696410392674,
+          "mean_recovered_phi_factor_cols": 0.20568482051963372,
+          "n_detections": 101
+        },
+        {
+          "true_phi": 0.5,
+          "reliability": 0.314,
+          "reps": 500,
+          "perms": 200,
+          "power": 0.516,
+          "power_se": 0.022349228174592516,
+          "mean_recovered_phi_pipeline": 0.05666127446384259,
+          "mean_recovered_phi_factor_cols": 0.2833063723192129,
+          "n_detections": 258
+        },
+        {
+          "true_phi": 0.65,
+          "reliability": 0.314,
+          "reps": 500,
+          "perms": 200,
+          "power": 0.788,
+          "power_se": 0.018278730809331373,
+          "mean_recovered_phi_pipeline": 0.07015425702598625,
+          "mean_recovered_phi_factor_cols": 0.3507712851299312,
+          "n_detections": 394
+        },
+        {
+          "true_phi": 0.8,
+          "reliability": 0.314,
+          "reps": 500,
+          "perms": 200,
+          "power": 0.96,
+          "power_se": 0.008763560920082661,
+          "mean_recovered_phi_pipeline": 0.08952319804019714,
+          "mean_recovered_phi_factor_cols": 0.4476159902009856,
+          "n_detections": 480
+        }
+      ],
+      "mde_power80": 0.6604651162790698
+    }
+  },
+  "paper_power_table": {
+    "0.3": 0.14,
+    "0.5": 0.45,
+    "0.65": 0.7,
+    "0.7": 0.9
+  },
+  "paper_comparison_ideal_scenario": [
+    {
+      "true_phi": 0.3,
+      "paper_power": 0.14,
+      "sim_power": 0.618,
+      "abs_diff": 0.478
+    },
+    {
+      "true_phi": 0.5,
+      "paper_power": 0.45,
+      "sim_power": 0.988,
+      "abs_diff": 0.538
+    },
+    {
+      "true_phi": 0.65,
+      "paper_power": 0.7,
+      "sim_power": 1.0,
+      "abs_diff": 0.30000000000000004
+    },
+    {
+      "true_phi": 0.7,
+      "paper_power": 0.9,
+      "sim_power": null,
+      "abs_diff": null
+    }
+  ],
+  "headline": {
+    "mde_power80_ideal": 0.3983783783783784,
+    "mde_power80_realistic": 0.6604651162790698
+  }
+}

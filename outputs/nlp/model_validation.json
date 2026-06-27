@@ -1,25 +1,35 @@
 {
   "sample_size": 200,
-  "agreement_rate": 0.32,
-  "cohens_kappa": 0.14184755174154473,
-  "interpretation": "slight/poor",
+  "seed": 20260627,
+  "corpus": "clean-43 (content-verified)",
+  "taxonomy": "10 functional categories (src/nlp/taxonomy.py)",
+  "primary_model": "facebook/bart-large-mnli",
+  "alternative_model": "cross-encoder/nli-deberta-v3-small",
+  "agreement_rate": 0.37,
+  "cohens_kappa": 0.24521520352232906,
+  "relaxed_top3_agreement": 0.68,
+  "interpretation": "fair",
   "bart_distribution": {
-    "consensus": 19,
-    "interoperability": 35,
-    "technology": 80,
+    "store_of_value": 1,
+    "medium_of_exchange": 75,
+    "smart_contracts": 8,
+    "governance": 1,
     "scalability": 14,
-    "security": 47,
-    "privacy": 3,
-    "governance": 2
+    "privacy": 6,
+    "interoperability": 20,
+    "data_storage": 70,
+    "oracle": 5
   },
   "deberta_distribution": {
-    "consensus": 27,
-    "tokenomics": 31,
-    "technology": 63,
-    "security": 40,
-    "interoperability": 21,
-    "scalability": 8,
-    "governance": 6,
-    "privacy": 4
+    "store_of_value": 8,
+    "medium_of_exchange": 54,
+    "smart_contracts": 36,
+    "defi": 4,
+    "governance": 9,
+    "scalability": 22,
+    "privacy": 20,
+    "interoperability": 24,
+    "data_storage": 19,
+    "oracle": 4
   }
 }

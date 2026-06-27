@@ -1,60 +1,60 @@
 {
   "importance": [
     {
-      "feature": "medium_of_exchange",
-      "phi_without": 0.2250543964778136,
-      "importance": 0.02068325833419657
+      "feature": "interoperability",
+      "phi_without": 0.20828389102844813,
+      "importance": 0.014779086495137428
     },
     {
-      "feature": "interoperability",
-      "phi_without": 0.22829571648440736,
-      "importance": 0.017441938327602824
+      "feature": "medium_of_exchange",
+      "phi_without": 0.21084025105849472,
+      "importance": 0.012222726465090844
     },
     {
       "feature": "privacy",
-      "phi_without": 0.22840361459762967,
-      "importance": 0.01733404021438051
-    },
-    {
-      "feature": "smart_contracts",
-      "phi_without": 0.23266376025253327,
-      "importance": 0.013073894559476912
-    },
-    {
-      "feature": "oracle",
-      "phi_without": 0.2372659076445241,
-      "importance": 0.008471747167486082
+      "phi_without": 0.21258476926952746,
+      "importance": 0.010478208254058097
     },
     {
       "feature": "governance",
-      "phi_without": 0.24068615216513667,
-      "importance": 0.0050515026468735125
-    },
-    {
-      "feature": "defi",
-      "phi_without": 0.24413453021276635,
-      "importance": 0.0016031245992438325
+      "phi_without": 0.21684404536943083,
+      "importance": 0.006218932154154727
     },
     {
       "feature": "store_of_value",
-      "phi_without": 0.24529231626908238,
-      "importance": 0.0004453385429278034
+      "phi_without": 0.22038608129380083,
+      "importance": 0.002676896229784731
+    },
+    {
+      "feature": "oracle",
+      "phi_without": 0.22118051042389678,
+      "importance": 0.0018824670996887838
+    },
+    {
+      "feature": "defi",
+      "phi_without": 0.22201186797726363,
+      "importance": 0.0010511095463219267
     },
     {
       "feature": "scalability",
-      "phi_without": 0.2453534381696807,
-      "importance": 0.00038421664232948793
+      "phi_without": 0.22378672571581087,
+      "importance": -0.0007237481922253153
+    },
+    {
+      "feature": "smart_contracts",
+      "phi_without": 0.22426107059329592,
+      "importance": -0.0011980930697103598
     },
     {
       "feature": "data_storage",
-      "phi_without": 0.24674513756560587,
-      "importance": -0.0010074827535956898
+      "phi_without": 0.22711097773058803,
+      "importance": -0.004048000207002467
     }
   ],
-  "phi_full": 0.24573765481201018,
+  "phi_full": 0.22306297752358556,
   "most_important": [
-    "medium_of_exchange",
     "interoperability",
+    "medium_of_exchange",
     "privacy"
   ]
 }

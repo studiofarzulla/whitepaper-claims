@@ -140,10 +140,16 @@ Return ONLY the JSON array, no other text."""
         """Call the LLM API and return response text."""
         if self.provider == "local":
             # Local LM Studio - no response_format, just direct call
+            # temperature=0 + seed for reproducible classification (jun27 clean re-run)
+            # reasoning_effort=none disables reasoning-model thinking (e.g. Nemotron-3),
+            # which otherwise balloons tokens past max_tokens and truncates the JSON.
             response = self.client.chat.completions.create(
                 model=self.model,
                 messages=[{"role": "user", "content": prompt}],
-                max_tokens=4096
+                max_tokens=4096,
+                temperature=0,
+                seed=42,
+                extra_body={"reasoning_effort": "none"}
             )
             return response.choices[0].message.content
 

@@ -1,284 +1,325 @@
 {
   "entities": [
     {
-      "symbol": "XMR",
-      "phi_without": 0.22568765538220922,
-      "impact": 0.020049999429800958,
-      "interpretation": "helps"
-    },
-    {
-      "symbol": "CRV",
-      "phi_without": 0.2324368811478025,
-      "impact": 0.013300773664207677,
-      "interpretation": "helps"
-    },
-    {
-      "symbol": "YFI",
-      "phi_without": 0.233504524727622,
-      "impact": 0.012233130084388172,
-      "interpretation": "helps"
-    },
-    {
-      "symbol": "SOL",
-      "phi_without": 0.2353365997388735,
-      "impact": 0.010401055073136684,
-      "interpretation": "helps"
-    },
-    {
       "symbol": "SUI",
-      "phi_without": 0.2376477974356283,
-      "impact": 0.008089857376381876,
+      "phi_without": 0.21420369846984594,
+      "impact": 0.008859279053739622,
       "interpretation": "neutral"
     },
     {
-      "symbol": "ATOM",
-      "phi_without": 0.24197106290700116,
-      "impact": 0.0037665919050090257,
+      "symbol": "XMR",
+      "phi_without": 0.21762336863116483,
+      "impact": 0.005439608892420733,
       "interpretation": "neutral"
     },
     {
-      "symbol": "MANA",
-      "phi_without": 0.2431332577397975,
-      "impact": 0.0026043970722126886,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "NEAR",
-      "phi_without": 0.24333011062818316,
-      "impact": 0.0024075441838270206,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "ETH",
-      "phi_without": 0.24355645180028257,
-      "impact": 0.0021812030117276116,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "ICP",
-      "phi_without": 0.2436444431550635,
-      "impact": 0.002093211656946675,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "GRT",
-      "phi_without": 0.24515483926083514,
-      "impact": 0.0005828155511750366,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "SAND",
-      "phi_without": 0.2455656288287778,
-      "impact": 0.00017202598323237672,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "AXS",
-      "phi_without": 0.24607343601448922,
-      "impact": -0.00033578120247904075,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "API3",
-      "phi_without": 0.2464518444317983,
-      "impact": -0.0007141896197881137,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "ZEC",
-      "phi_without": 0.2466736313201136,
-      "impact": -0.0009359765081034255,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "AVAX",
-      "phi_without": 0.2467536936250016,
-      "impact": -0.001016038812991421,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "ADA",
-      "phi_without": 0.2469515174274412,
-      "impact": -0.0012138626154310217,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "ARB",
-      "phi_without": 0.24700323123053866,
-      "impact": -0.0012655764185284801,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "FIL",
-      "phi_without": 0.24739845374013086,
-      "impact": -0.0016607989281206825,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "DOT",
-      "phi_without": 0.2477799133526381,
-      "impact": -0.0020422585406279226,
+      "symbol": "TRB",
+      "phi_without": 0.21768976445654772,
+      "impact": 0.005373213067037835,
       "interpretation": "neutral"
     },
     {
       "symbol": "MKR",
-      "phi_without": 0.24834709922826326,
-      "impact": -0.002609444416253076,
+      "phi_without": 0.21813500830540383,
+      "impact": 0.004927969218181727,
       "interpretation": "neutral"
     },
     {
-      "symbol": "BAND",
-      "phi_without": 0.24840929589023958,
-      "impact": -0.0026716410782293976,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "APT",
-      "phi_without": 0.24852257528367475,
-      "impact": -0.002784920471664565,
+      "symbol": "ADA",
+      "phi_without": 0.21813819414607938,
+      "impact": 0.004924783377506181,
       "interpretation": "neutral"
     },
     {
       "symbol": "COMP",
-      "phi_without": 0.24860445433920408,
-      "impact": -0.002866799527193903,
+      "phi_without": 0.21961999138620786,
+      "impact": 0.0034429861373777015,
       "interpretation": "neutral"
     },
     {
-      "symbol": "BTC",
-      "phi_without": 0.249229438594693,
-      "impact": -0.0034917837826828058,
+      "symbol": "FTM",
+      "phi_without": 0.22009263030471843,
+      "impact": 0.002970347218867131,
       "interpretation": "neutral"
     },
     {
-      "symbol": "UNI",
-      "phi_without": 0.2495345237038432,
-      "impact": -0.003796868891833005,
+      "symbol": "RENDER",
+      "phi_without": 0.22108470575245995,
+      "impact": 0.0019782717711256115,
       "interpretation": "neutral"
     },
     {
-      "symbol": "ALGO",
-      "phi_without": 0.25018025374030406,
-      "impact": -0.004442598928293878,
+      "symbol": "GRT",
+      "phi_without": 0.2212437331418479,
+      "impact": 0.001819244381737667,
       "interpretation": "neutral"
     },
     {
-      "symbol": "LDO",
-      "phi_without": 0.25104096600026626,
-      "impact": -0.005303311188256082,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "STORJ",
-      "phi_without": 0.25185064916144234,
-      "impact": -0.00611299434943216,
-      "interpretation": "neutral"
-    },
-    {
-      "symbol": "OCEAN",
-      "phi_without": 0.2532268139438544,
-      "impact": -0.0074891591318441975,
+      "symbol": "MANA",
+      "phi_without": 0.22135656116079233,
+      "impact": 0.0017064163627932283,
       "interpretation": "neutral"
     },
     {
       "symbol": "SC",
-      "phi_without": 0.2534316830160864,
-      "impact": -0.007694028204076192,
+      "phi_without": 0.2227399200886803,
+      "impact": 0.00032305743490526617,
       "interpretation": "neutral"
     },
     {
-      "symbol": "EGLD",
-      "phi_without": 0.25465561613593035,
-      "impact": -0.00891796132392017,
+      "symbol": "DOT",
+      "phi_without": 0.22333452052627378,
+      "impact": -0.00027154300268822373,
       "interpretation": "neutral"
     },
     {
-      "symbol": "LINK",
-      "phi_without": 0.2556344686815453,
-      "impact": -0.009896813869535143,
+      "symbol": "SAND",
+      "phi_without": 0.22339355010321332,
+      "impact": -0.00033057257962776365,
       "interpretation": "neutral"
     },
     {
-      "symbol": "SUSHI",
-      "phi_without": 0.2569085451758248,
-      "impact": -0.011170890363814606,
-      "interpretation": "hurts"
+      "symbol": "SOL",
+      "phi_without": 0.22344975631977854,
+      "impact": -0.00038677879619297695,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "OP",
+      "phi_without": 0.22348681553762234,
+      "impact": -0.00042383801403678145,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "ENJ",
+      "phi_without": 0.2235093257461913,
+      "impact": -0.00044634822260575246,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "BTC",
+      "phi_without": 0.2238139201914559,
+      "impact": -0.0007509426678703468,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "ALGO",
+      "phi_without": 0.22388105224516078,
+      "impact": -0.0008180747215752182,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "ATOM",
+      "phi_without": 0.224127222275812,
+      "impact": -0.0010642447522264398,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "UNI",
+      "phi_without": 0.22453610083743505,
+      "impact": -0.0014731233138494948,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "NEAR",
+      "phi_without": 0.22480293618540642,
+      "impact": -0.0017399586618208618,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "IMX",
+      "phi_without": 0.2250230724417069,
+      "impact": -0.0019600949181213523,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "LDO",
+      "phi_without": 0.2253578353516092,
+      "impact": -0.002294857828023633,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "ARB",
+      "phi_without": 0.2254089148684411,
+      "impact": -0.002345937344855553,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "ICP",
+      "phi_without": 0.225556235859999,
+      "impact": -0.002493258336413451,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "OCEAN",
+      "phi_without": 0.22576567636885808,
+      "impact": -0.002702698845272522,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "RPL",
+      "phi_without": 0.22782168235826475,
+      "impact": -0.004758704834679189,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "AVAX",
+      "phi_without": 0.22783971349769194,
+      "impact": -0.004776735974106383,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "ETH",
+      "phi_without": 0.22791227573938344,
+      "impact": -0.0048492982157978815,
+      "interpretation": "neutral"
     },
     {
       "symbol": "AAVE",
-      "phi_without": 0.2569507530652847,
-      "impact": -0.011213098253274517,
+      "phi_without": 0.22809717404419266,
+      "impact": -0.005034196520607104,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "API3",
+      "phi_without": 0.22815674832590327,
+      "impact": -0.00509377080231771,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "FIL",
+      "phi_without": 0.22830847275216729,
+      "impact": -0.005245495228581726,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "ZEC",
+      "phi_without": 0.2290488311505702,
+      "impact": -0.005985853626984644,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "APT",
+      "phi_without": 0.22933670971417888,
+      "impact": -0.006273732190593323,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "BAND",
+      "phi_without": 0.22945352626600607,
+      "impact": -0.00639054874242051,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "SNX",
+      "phi_without": 0.23173923851533348,
+      "impact": -0.008676260991747925,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "CRV",
+      "phi_without": 0.23220718418675404,
+      "impact": -0.00914420666316848,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "STORJ",
+      "phi_without": 0.23264335245813425,
+      "impact": -0.009580374934548691,
+      "interpretation": "neutral"
+    },
+    {
+      "symbol": "LPT",
+      "phi_without": 0.23309801787404388,
+      "impact": -0.010035040350458324,
+      "interpretation": "hurts"
+    },
+    {
+      "symbol": "EGLD",
+      "phi_without": 0.23470100185295867,
+      "impact": -0.011638024329373109,
+      "interpretation": "hurts"
+    },
+    {
+      "symbol": "POL",
+      "phi_without": 0.23618282198841434,
+      "impact": -0.013119844464828778,
       "interpretation": "hurts"
     },
     {
       "symbol": "HBAR",
-      "phi_without": 0.26131277589370827,
-      "impact": -0.01557512108169809,
+      "phi_without": 0.23641163108550103,
+      "impact": -0.013348653561915474,
       "interpretation": "hurts"
     },
     {
-      "symbol": "RPL",
-      "phi_without": 0.2635920384256994,
-      "impact": -0.017854383613689212,
+      "symbol": "LINK",
+      "phi_without": 0.24560347602615823,
+      "impact": -0.02254049850257267,
       "interpretation": "hurts"
     }
   ],
-  "phi_full": 0.24573765481201018,
-  "best_aligned": [
-    "XMR",
-    "CRV",
-    "YFI",
-    "SOL"
-  ],
+  "phi_full": 0.22306297752358556,
+  "best_aligned": [],
   "worst_aligned": [
-    "SUSHI",
-    "AAVE",
+    "LPT",
+    "EGLD",
+    "POL",
     "HBAR",
-    "RPL"
+    "LINK"
   ],
   "clusters": {
     "0": [
       "AAVE",
-      "ADA",
-      "AVAX",
       "BTC",
-      "COMP",
       "ETH",
-      "ICP",
       "LINK",
-      "MKR",
-      "NEAR",
-      "OCEAN",
-      "SOL",
-      "SUI"
+      "POL",
+      "RENDER",
+      "SOL"
     ],
-    "2": [
+    "1": [
+      "ADA",
       "ALGO",
       "API3",
       "APT",
+      "AVAX",
+      "COMP",
       "CRV",
-      "FIL",
+      "FTM",
       "GRT",
       "HBAR",
+      "ICP",
+      "IMX",
       "LDO",
-      "MANA",
+      "LPT",
+      "MKR",
+      "NEAR",
+      "OCEAN",
+      "OP",
       "SAND",
       "SC",
       "STORJ",
-      "SUSHI",
+      "SUI",
+      "TRB",
       "UNI"
     ],
-    "1": [
+    "2": [
       "ARB",
       "ATOM",
-      "AXS",
       "BAND",
       "DOT",
       "EGLD",
+      "ENJ",
+      "FIL",
+      "MANA",
       "RPL",
+      "SNX",
       "XMR",
-      "YFI",
       "ZEC"
     ]
-  }
+  },
+  "n": 43,
+  "corpus": "content-verified-43",
+  "note": "Rebuilt from outputs/analysis/cross_sectional_analysis.json (clean-43). Supersedes the n=37 contaminated build retained as entity_impact_plot_contaminated_n37.json."
 }

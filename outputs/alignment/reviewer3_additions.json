@@ -5,24 +5,24 @@
     "disattenuated_estimates": [
       {
         "comparison": "claims_vs_factors",
-        "phi_observed": 0.051859787801562716,
-        "phi_disattenuated": 0.09675254716362357,
+        "phi_observed": 0.04999950500488042,
+        "phi_disattenuated": 0.09328189858109587,
         "reliability_x": 0.3024217699807437,
         "reliability_y": 0.95,
         "attenuation_factor": 0.5360043670360406
       },
       {
         "comparison": "claims_vs_stats",
-        "phi_observed": 0.10610348004816023,
-        "phi_disattenuated": 0.19795264101090038,
+        "phi_observed": 0.0708310837578688,
+        "phi_disattenuated": 0.13214646766694377,
         "reliability_x": 0.3024217699807437,
         "reliability_y": 0.95,
         "attenuation_factor": 0.5360043670360406
       },
       {
         "comparison": "stats_vs_factors",
-        "phi_observed": 0.25307234367670767,
-        "phi_disattenuated": 0.26639194071232386,
+        "phi_observed": 0.22850691608107523,
+        "phi_disattenuated": 0.24053359587481604,
         "reliability_x": 0.95,
         "reliability_y": 0.95,
         "attenuation_factor": 0.95
@@ -33,34 +33,34 @@
     "h1_timestamps": 8771,
     "h2_timestamps": 8772,
     "phi_split_sample": 0.44892050431051767,
-    "p_value": 0.051,
-    "phi_same_sample": 0.25307234367670767,
-    "significant": false
+    "p_value": 0.046,
+    "phi_same_sample": 0.22850691608107523,
+    "significant": true
   },
   "partial_correlations": {
-    "n_assets": 37,
+    "n_assets": 43,
     "control_variable": "avg_volume (market cap proxy)",
     "comparisons": [
       {
         "comparison": "claims_vs_factors",
-        "phi_raw": 0.29135650049182155,
-        "phi_partial": 0.37053305389138574,
-        "change": 0.0791765533995642,
-        "change_pct": 27.17514565102746
+        "phi_raw": 0.30898698444859446,
+        "phi_partial": 0.3380803076098573,
+        "change": 0.02909332316126284,
+        "change_pct": 9.415711540007383
       },
       {
         "comparison": "claims_vs_stats",
-        "phi_raw": 0.35105379258858604,
-        "phi_partial": 0.29068255898505685,
-        "change": -0.060371233603529195,
-        "change_pct": -17.19714609580746
+        "phi_raw": 0.31866139646226516,
+        "phi_partial": 0.2579116284611998,
+        "change": -0.06074976800106535,
+        "change_pct": -19.064050009331797
       },
       {
         "comparison": "stats_vs_factors",
-        "phi_raw": 0.6088557970137074,
-        "phi_partial": 0.476472989249086,
-        "change": -0.1323828077646214,
-        "change_pct": -21.742883683161867
+        "phi_raw": 0.5920386704522644,
+        "phi_partial": 0.4592858461154369,
+        "change": -0.13275282433682756,
+        "change_pct": -22.42299885799576
       }
     ]
   }

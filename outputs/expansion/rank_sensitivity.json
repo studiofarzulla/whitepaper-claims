@@ -2,26 +2,26 @@
   {
     "rank": 1,
     "explained_variance": 0.7942399795012596,
-    "alignment_phi": 0.03567726616082894
+    "alignment_phi": 0.03955331502907253
   },
   {
     "rank": 2,
     "explained_variance": 0.9245111518582052,
-    "alignment_phi": 0.05827130009836432
+    "alignment_phi": 0.06179739688971887
   },
   {
     "rank": 3,
     "explained_variance": 0.9248730203532549,
-    "alignment_phi": 0.07278889384366587
+    "alignment_phi": 0.07934643063517129
   },
   {
     "rank": 4,
     "explained_variance": 0.9805960895211048,
-    "alignment_phi": 0.09403323902457963
+    "alignment_phi": 0.10129423241820049
   },
   {
     "rank": 5,
     "explained_variance": 0.9810126083467873,
-    "alignment_phi": 0.09416971577002557
+    "alignment_phi": 0.09482461170782833
   }
 ]

@@ -2,40 +2,45 @@
 # See: https://citation-file-format.github.io/
 
 cff-version: 1.2.0
-title: "Do Whitepaper Claims Predict Market Behavior? Evidence from Cryptocurrency Factor Analysis"
+title: "Are Whitepaper Claims Reflected in Market Structure? A Contamination-Aware Pipeline and a Power-Limited Null"
 message: "If you use this research, please cite it using the metadata from this file."
 type: dataset
 authors:
   - family-names: Farzulla
     given-names: Murad
     orcid: "https://orcid.org/0009-0002-7164-8704"
-    affiliation: "Farzulla Research"
+    affiliation: "Dissensus"
 repository-code: "https://github.com/studiofarzulla/tensor-defi"
-url: "https://farzulla.org"
+url: "https://dissensus.ai"
 abstract: >-
-  This paper investigates whether the functional claims made in cryptocurrency
-  whitepapers exhibit measurable alignment with subsequent market behavior patterns.
-  Using zero-shot NLP classification and tensor decomposition, we analyze 13 major
-  cryptocurrency whitepapers against market data for 49 assets over 17,543 daily
-  observations. Our CP tensor decomposition achieves 92.45% variance explained with
-  rank-2 factors, revealing a "BTC dominance" factor (loading: 28.5) and a
-  "diversified altcoin" factor. The primary claims-statistics alignment yields
-  Tucker's φ = 0.331 (moderate alignment, p < 0.001), with "smart contracts" and
-  "interoperability" categories showing strongest correspondence to market patterns.
-  We contribute novel methodology combining NLP-extracted semantic features with
-  tensor factor analysis for financial prediction.
+  A reproducible, content-verified pipeline for measuring the structural
+  correspondence between cryptocurrency whitepaper narratives and market
+  structure, with a positive-control and power apparatus that fixes what the
+  design can detect. Two results follow. First, a corpus-contamination cautionary
+  tale: an apparent cross-sectional ordering — specialised tokens appearing to
+  align with their stated narrative while broad infrastructure tokens did not —
+  was entirely an artifact of contamination (roughly a quarter of the earlier
+  corpus were failed-download stubs or wrong-document files) and does not survive
+  content verification on the clean 43-asset corpus. Second, a power-limited null:
+  claims–statistics congruence is Tucker's phi = 0.303 (dimension-matched) /
+  0.223 (zero-padded), both non-significant, with a realistic minimum detectable
+  effect of phi ~= 0.66 — the design can reject strong narrative–market alignment
+  but cannot adjudicate weak-to-moderate alignment (absence of evidence, not
+  evidence of absence). Market structure is measured over 17,543 hourly timestamps
+  (2023–2024).
 keywords:
   - cryptocurrency
-  - tensor decomposition
+  - narrative economics
   - natural language processing
-  - factor analysis
-  - whitepaper analysis
-  - market behavior
-  - PARAFAC
+  - structural alignment
+  - Procrustes analysis
   - Tucker congruence
+  - statistical power
+  - corpus contamination
+  - reproducibility
 license: CC-BY-4.0
-version: "3.0.0"
-date-released: "2025-12-12"
+version: "4.0.0"
+date-released: "2026-06-27"
 doi: "10.5281/zenodo.17917922"
 identifiers:
   - type: doi
@@ -47,7 +52,7 @@ preferred-citation:
     - family-names: Farzulla
       given-names: Murad
       orcid: "https://orcid.org/0009-0002-7164-8704"
-  title: "Do Whitepaper Claims Predict Market Behavior? Evidence from Cryptocurrency Factor Analysis"
-  year: 2025
+  title: "Are Whitepaper Claims Reflected in Market Structure? A Contamination-Aware Pipeline and a Power-Limited Null"
+  year: 2026
   journal: "Zenodo"
   doi: "10.5281/zenodo.17917922"

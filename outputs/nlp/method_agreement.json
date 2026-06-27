@@ -7,86 +7,86 @@
   "pairwise_correlations": {
     "bart_nli_vs_embedding": {
       "pearson": {
-        "r": 0.10269425239351965,
-        "p": 0.04543805314043782
+        "r": 0.07038462747382818,
+        "p": 0.1450927063780634
       },
       "spearman": {
-        "rho": 0.11073046503821102,
-        "p": 0.030922907875543748
+        "rho": 0.08156556118569824,
+        "p": 0.091167362439823
       }
     },
     "bart_nli_vs_ministral3": {
       "pearson": {
-        "r": 0.4128201727795277,
-        "p": 4.528081278004039e-17
+        "r": 0.47507536876698175,
+        "p": 1.3576632099082545e-25
       },
       "spearman": {
-        "rho": 0.4574644031664664,
-        "p": 4.73460746836789e-21
+        "rho": 0.5256469515529976,
+        "p": 6.420851149951138e-32
       }
     },
     "embedding_vs_ministral3": {
       "pearson": {
-        "r": 0.39175088476918374,
-        "p": 2.1793702148945992e-15
+        "r": 0.3953098228969223,
+        "p": 1.553450440009907e-17
       },
       "spearman": {
-        "rho": 0.3840527665750607,
-        "p": 8.38912829344721e-15
+        "rho": 0.33294864073756025,
+        "p": 1.3676886090072812e-12
       }
     }
   },
   "category_agreement": {
     "store_of_value": {
-      "mean_correlation": 0.3759477337776332,
-      "std_correlation": 0.14117277436705838,
+      "mean_correlation": 0.42065271764537626,
+      "std_correlation": 0.17745814263649426,
       "n_pairs": 3.0
     },
     "medium_of_exchange": {
-      "mean_correlation": 0.6520323635334173,
-      "std_correlation": 0.05962088142836912,
+      "mean_correlation": 0.5264417646017654,
+      "std_correlation": 0.12208220389751658,
       "n_pairs": 3.0
     },
     "smart_contracts": {
-      "mean_correlation": 0.23874165415442036,
-      "std_correlation": 0.31208524954489797,
+      "mean_correlation": 0.20791399594926432,
+      "std_correlation": 0.23889083152427523,
       "n_pairs": 3.0
     },
     "defi": {
-      "mean_correlation": 0.6282296050316356,
-      "std_correlation": 0.12706502117908022,
+      "mean_correlation": 0.8149202460388424,
+      "std_correlation": 0.03524057868360612,
       "n_pairs": 3.0
     },
     "governance": {
-      "mean_correlation": 0.4726517209446231,
-      "std_correlation": 0.2664759555070637,
+      "mean_correlation": 0.49672687560678974,
+      "std_correlation": 0.04080232144793072,
       "n_pairs": 3.0
     },
     "scalability": {
-      "mean_correlation": 0.5232118680563359,
-      "std_correlation": 0.05362536737144175,
+      "mean_correlation": 0.6624472674549448,
+      "std_correlation": 0.07717171907242669,
       "n_pairs": 3.0
     },
     "privacy": {
-      "mean_correlation": 0.5399513276833567,
-      "std_correlation": 0.005267778740820925,
+      "mean_correlation": 0.7047586715374455,
+      "std_correlation": 0.020095139269976907,
       "n_pairs": 3.0
     },
     "interoperability": {
-      "mean_correlation": 0.4409705842231359,
-      "std_correlation": 0.11946819063990945,
+      "mean_correlation": 0.4905592057374908,
+      "std_correlation": 0.03323739915839888,
       "n_pairs": 3.0
     },
     "data_storage": {
-      "mean_correlation": 0.42677596495702214,
-      "std_correlation": 0.18191387429592998,
+      "mean_correlation": 0.6502871982870129,
+      "std_correlation": 0.001411529689444804,
       "n_pairs": 3.0
     },
     "oracle": {
-      "mean_correlation": 0.5083168509973891,
-      "std_correlation": 0.08970129164931,
+      "mean_correlation": 0.7695354159734529,
+      "std_correlation": 0.0628398472268832,
       "n_pairs": 3.0
     }
   },
-  "fleiss_kappa": 0.04482944866841039
+  "fleiss_kappa": 0.06658553832491891
 }

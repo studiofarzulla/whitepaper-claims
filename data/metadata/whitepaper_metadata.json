@@ -2,397 +2,388 @@
   {
     "symbol": "AAVE",
     "name": "Aave",
-    "url": "https://raw.githubusercontent.com/aave/aave-protocol/master/docs/Aave_Protocol_Whitepaper_v1_0.pdf",
     "local_path": "data/whitepapers/aave_whitepaper.pdf",
     "pages": 23,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "protocol_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "ADA",
     "name": "Cardano",
-    "url": "https://arxiv.org/pdf/1807.11218.pdf",
     "local_path": "data/whitepapers/ada_whitepaper.pdf",
-    "pages": 48,
-    "download_date": "2026-01-18",
+    "pages": 32,
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "consensus_paper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "ALGO",
     "name": "Algorand",
-    "url": "https://arxiv.org/pdf/1607.01341.pdf",
-    "local_path": "data/whitepapers/algo_readme.md",
-    "pages": 1,
-    "download_date": "2026-01-18",
-    "fallback_type": "markdown",
-    "doc_type": "academic_paper"
+    "local_path": "data/whitepapers/algo_whitepaper.pdf",
+    "pages": 75,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "API3",
     "name": "API3",
-    "url": "https://github.com/api3dao/api3-whitepaper/raw/master/api3-whitepaper.pdf",
     "local_path": "data/whitepapers/api3_whitepaper.pdf",
     "pages": 40,
-    "download_date": "2026-01-28",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "first_party_oracle",
-    "download_status": "success"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "APT",
     "name": "Aptos",
-    "url": "https://aptosnetwork.com/whitepaper/aptos-whitepaper_en.pdf",
     "local_path": "data/whitepapers/apt_whitepaper.pdf",
     "pages": 17,
-    "download_date": "2026-01-28",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "move_blockchain",
-    "download_status": "success"
-  },
-  {
-    "symbol": "AR",
-    "name": "Arweave",
-    "url": "https://www.arweave.org/yellow-paper.pdf",
-    "local_path": "data/whitepapers/ar_whitepaper.pdf",
-    "pages": 67,
-    "download_date": "2026-01-18",
-    "fallback_type": null,
-    "doc_type": "yellowpaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "ARB",
     "name": "Arbitrum",
-    "url": "https://github.com/OffchainLabs/nitro/raw/master/docs/Nitro-whitepaper.pdf",
     "local_path": "data/whitepapers/arb_whitepaper.pdf",
     "pages": 16,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "rollup_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "ATOM",
     "name": "Cosmos",
-    "url": "https://v1.cosmos.network/resources/whitepaper",
-    "local_path": "data/whitepapers/atom_readme.md",
+    "local_path": "data/whitepapers/atom_whitepaper.md",
     "pages": 1,
-    "download_date": "2026-01-18",
-    "fallback_type": "markdown",
-    "doc_type": "original_whitepaper"
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "AVAX",
     "name": "Avalanche",
-    "url": "https://assets.website-files.com/5d80307810123f5ffbb34d6e/6008d7bbf8b10d1eb01e7e16_Avalanche%20Platform%20Whitepaper.pdf",
     "local_path": "data/whitepapers/avax_whitepaper.pdf",
     "pages": 14,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "consensus_paper"
-  },
-  {
-    "symbol": "AXS",
-    "name": "Axie Infinity",
-    "url": "https://whitepaper.axieinfinity.com/",
-    "local_path": "data/whitepapers/axs_whitepaper.html",
-    "pages": 1,
-    "download_date": "2026-01-28",
-    "fallback_type": "html",
-    "doc_type": "gaming_whitepaper",
-    "download_status": "success"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "BAND",
     "name": "Band Protocol",
-    "url": "https://github.com/bandprotocol/whitepaper-legacy",
-    "local_path": "data/whitepapers/band_whitepaper.html",
+    "local_path": "data/whitepapers/band_whitepaper.txt",
     "pages": 1,
-    "download_date": "2026-01-28",
-    "fallback_type": "html",
-    "doc_type": "oracle_whitepaper",
-    "download_status": "success"
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "BTC",
     "name": "Bitcoin",
-    "url": "https://bitcoin.org/bitcoin.pdf",
     "local_path": "data/whitepapers/btc_whitepaper.pdf",
     "pages": 9,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "original_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "COMP",
     "name": "Compound",
-    "url": "https://compound.finance/documents/Compound.Whitepaper.pdf",
     "local_path": "data/whitepapers/comp_whitepaper.pdf",
     "pages": 8,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "lending_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "CRV",
     "name": "Curve Finance",
-    "url": "https://www.curve.finance/files/stableswap-paper.pdf",
     "local_path": "data/whitepapers/crv_whitepaper.pdf",
     "pages": 6,
-    "download_date": "2026-01-28",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "stableswap_paper",
-    "download_status": "success"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "DOT",
     "name": "Polkadot",
-    "url": "https://polkadot.network/whitepaper/polkadot-whitepaper.pdf",
-    "local_path": "data/whitepapers/dot_readme.md",
-    "pages": 1,
-    "download_date": "2026-01-18",
-    "fallback_type": "markdown",
-    "doc_type": "original_whitepaper",
-    "download_status": "failed"
+    "local_path": "data/whitepapers/dot_whitepaper.pdf",
+    "pages": 21,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "EGLD",
     "name": "MultiversX",
-    "url": "https://files.multiversx.com/multiversx-whitepaper.pdf",
     "local_path": "data/whitepapers/egld_whitepaper.pdf",
     "pages": 19,
-    "download_date": "2026-01-28",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "sharding_whitepaper",
-    "download_status": "success"
+    "doc_type": "whitepaper"
+  },
+  {
+    "symbol": "ENJ",
+    "name": "Enjin",
+    "local_path": "data/whitepapers/enj_whitepaper.pdf",
+    "pages": 34,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "ETH",
     "name": "Ethereum",
-    "url": "https://ethereum.org/content/whitepaper/whitepaper-pdf/Ethereum_Whitepaper_-_Buterin_2014.pdf",
     "local_path": "data/whitepapers/eth_whitepaper.pdf",
     "pages": 36,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "original_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "FIL",
     "name": "Filecoin",
-    "url": "https://filecoin.io/filecoin.pdf",
     "local_path": "data/whitepapers/fil_whitepaper.pdf",
     "pages": 36,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "technical_report"
+    "doc_type": "whitepaper"
+  },
+  {
+    "symbol": "FTM",
+    "name": "Fantom",
+    "local_path": "data/whitepapers/ftm_whitepaper.pdf",
+    "pages": 50,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "GRT",
     "name": "The Graph",
-    "url": "https://arxiv.org/pdf/2006.12275.pdf",
     "local_path": "data/whitepapers/grt_whitepaper.pdf",
-    "pages": 18,
-    "download_date": "2026-01-18",
+    "pages": 12,
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "indexing_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "HBAR",
     "name": "Hedera",
-    "url": "https://hedera.com/papers",
     "local_path": "data/whitepapers/hbar_whitepaper.html",
     "pages": 1,
-    "download_date": "2026-01-28",
-    "fallback_type": "html",
-    "doc_type": "hashgraph_whitepaper",
-    "download_status": "success"
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "ICP",
     "name": "Internet Computer",
-    "url": "https://internetcomputer.org/whitepaper.pdf",
     "local_path": "data/whitepapers/icp_whitepaper.pdf",
     "pages": 45,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "technical_overview"
+    "doc_type": "whitepaper"
+  },
+  {
+    "symbol": "IMX",
+    "name": "Immutable",
+    "local_path": "data/whitepapers/imx_whitepaper.pdf",
+    "pages": 17,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "LDO",
     "name": "Lido",
-    "url": "https://lido.fi/static/Lido:Ethereum-Liquid-Staking.pdf",
     "local_path": "data/whitepapers/ldo_whitepaper.pdf",
     "pages": 6,
-    "download_date": "2026-01-28",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "liquid_staking",
-    "download_status": "success"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "LINK",
     "name": "Chainlink",
-    "url": "https://research.chain.link/whitepaper-v1.pdf",
     "local_path": "data/whitepapers/link_whitepaper.pdf",
     "pages": 38,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "oracle_whitepaper"
+    "doc_type": "whitepaper"
+  },
+  {
+    "symbol": "LPT",
+    "name": "Livepeer",
+    "local_path": "data/whitepapers/lpt_whitepaper.md",
+    "pages": 1,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "MANA",
     "name": "Decentraland",
-    "url": "https://decentraland.org/whitepaper.pdf",
     "local_path": "data/whitepapers/mana_whitepaper.pdf",
     "pages": 15,
-    "download_date": "2026-01-28",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "metaverse_whitepaper",
-    "download_status": "success"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "MKR",
     "name": "Maker",
-    "url": "https://makerdao.com/whitepaper/Dai-Whitepaper-Dec17-en.pdf",
     "local_path": "data/whitepapers/mkr_whitepaper.pdf",
     "pages": 21,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "stablecoin_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "NEAR",
     "name": "NEAR Protocol",
-    "url": "https://arxiv.org/pdf/2002.11565.pdf",
     "local_path": "data/whitepapers/near_whitepaper.pdf",
-    "pages": 23,
-    "download_date": "2026-01-18",
+    "pages": 45,
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "sharding_paper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "OCEAN",
     "name": "Ocean Protocol",
-    "url": "https://oceanprotocol.com/tech-whitepaper.pdf",
     "local_path": "data/whitepapers/ocean_whitepaper.pdf",
     "pages": 36,
-    "download_date": "2026-01-28",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "data_marketplace",
-    "download_status": "success"
+    "doc_type": "whitepaper"
+  },
+  {
+    "symbol": "OP",
+    "name": "Optimism",
+    "local_path": "data/whitepapers/op_whitepaper.pdf",
+    "pages": 28,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
+  },
+  {
+    "symbol": "POL",
+    "name": "Polygon",
+    "local_path": "data/whitepapers/pol_whitepaper.pdf",
+    "pages": 25,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
+  },
+  {
+    "symbol": "RENDER",
+    "name": "Render",
+    "local_path": "data/whitepapers/render_whitepaper.pdf",
+    "pages": 10,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "RPL",
     "name": "Rocket Pool",
-    "url": "https://docs.rocketpool.net/whitepaper/",
-    "local_path": "data/whitepapers/rpl_whitepaper.html",
-    "pages": 1,
-    "download_date": "2026-01-28",
-    "fallback_type": "html",
-    "doc_type": "decentralized_staking",
-    "download_status": "success"
+    "local_path": "data/whitepapers/rpl_whitepaper.pdf",
+    "pages": 34,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "SAND",
     "name": "The Sandbox",
-    "url": "https://installers.sandbox.game/The_Sandbox_Whitepaper_2020.pdf",
     "local_path": "data/whitepapers/sand_whitepaper.pdf",
     "pages": 44,
-    "download_date": "2026-01-28",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "metaverse_whitepaper",
-    "download_status": "success"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "SC",
     "name": "Siacoin",
-    "url": "https://sia.tech/sia.pdf",
     "local_path": "data/whitepapers/sc_whitepaper.pdf",
     "pages": 8,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "storage_whitepaper"
+    "doc_type": "whitepaper"
+  },
+  {
+    "symbol": "SNX",
+    "name": "Synthetix",
+    "local_path": "data/whitepapers/snx_whitepaper.pdf",
+    "pages": 32,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "SOL",
     "name": "Solana",
-    "url": "https://solana.com/solana-whitepaper.pdf",
     "local_path": "data/whitepapers/sol_whitepaper.pdf",
     "pages": 32,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "original_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "STORJ",
     "name": "Storj",
-    "url": "https://www.storj.io/storjv3.pdf",
     "local_path": "data/whitepapers/storj_whitepaper.pdf",
     "pages": 90,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "storage_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "SUI",
     "name": "Sui",
-    "url": "https://github.com/MystenLabs/sui/raw/main/doc/paper/sui.pdf",
     "local_path": "data/whitepapers/sui_whitepaper.pdf",
     "pages": 11,
-    "download_date": "2026-01-28",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "object_centric",
-    "download_status": "success"
+    "doc_type": "whitepaper"
   },
   {
-    "symbol": "SUSHI",
-    "name": "SushiSwap",
-    "url": "https://docs.sushi.com/",
-    "local_path": "data/whitepapers/sushi_whitepaper.html",
-    "pages": 1,
-    "download_date": "2026-01-28",
-    "fallback_type": "html",
-    "doc_type": "dex_documentation",
-    "download_status": "success"
+    "symbol": "TRB",
+    "name": "Tellor",
+    "local_path": "data/whitepapers/trb_whitepaper.pdf",
+    "pages": 8,
+    "download_date": "2026-06-20",
+    "fallback_type": null,
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "UNI",
     "name": "Uniswap",
-    "url": "https://uniswap.org/whitepaper-v3.pdf",
     "local_path": "data/whitepapers/uni_whitepaper.pdf",
     "pages": 10,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "amm_whitepaper"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "XMR",
     "name": "Monero",
-    "url": "https://github.com/monero-project/research-lab/raw/master/whitepaper/whitepaper.pdf",
     "local_path": "data/whitepapers/xmr_whitepaper.pdf",
     "pages": 20,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "cryptonote_whitepaper"
-  },
-  {
-    "symbol": "YFI",
-    "name": "Yearn Finance",
-    "url": "https://docs.yearn.fi/",
-    "local_path": "data/whitepapers/yfi_whitepaper.html",
-    "pages": 1,
-    "download_date": "2026-01-28",
-    "fallback_type": "html",
-    "doc_type": "yield_aggregation",
-    "download_status": "success"
+    "doc_type": "whitepaper"
   },
   {
     "symbol": "ZEC",
     "name": "Zcash",
-    "url": "https://zips.z.cash/protocol/protocol.pdf",
     "local_path": "data/whitepapers/zec_whitepaper.pdf",
     "pages": 229,
-    "download_date": "2026-01-18",
+    "download_date": "2026-06-20",
     "fallback_type": null,
-    "doc_type": "protocol_spec"
+    "doc_type": "whitepaper"
   }
 ]

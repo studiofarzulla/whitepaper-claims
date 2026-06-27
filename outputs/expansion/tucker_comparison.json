@@ -2,9 +2,9 @@
   "cp": {
     "rank": 2,
     "explained_variance": 0.9245111518582052,
-    "alignment_phi": 0.05827130009836432,
+    "alignment_phi": 0.06179739688971887,
     "factor_shape": [
-      49,
+      43,
       2
     ]
   },
@@ -15,9 +15,9 @@
       2
     ],
     "explained_variance": 0.9246352830967969,
-    "alignment_phi": 0.059890480431803464,
+    "alignment_phi": 0.06209425014967995,
     "factor_shape": [
-      49,
+      43,
       2
     ],
     "core_shape": [

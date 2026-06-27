@@ -259,51 +259,117 @@ def fig8_feature_importance(data_path: Path, output_path: Path):
     plt.close()
 
 
-def fig9_entity_impact(data_path: Path, output_path: Path):
-    """Generate entity impact dot plot."""
-    print("Generating Figure 9: Entity Impact...")
+# Dropped during content verification (failed-download stub / wrong-document
+# files masquerading as whitepapers); absent from the content-verified corpus.
+DROPPED_STUBS = {'YFI', 'AXS', 'SUSHI', 'GALA', 'ENS'}
 
-    with open(data_path / "entity_impact_plot.json") as f:
-        data = json.load(f)
+# Colour by interpretation, not raw sign: the leave-one-out magnitudes are tiny,
+# and what matters for the cautionary tale is whether an asset registers as
+# helping / hurting alignment at all.
+INTERP_COLOUR = {'helps': '#2ecc71', 'hurts': '#e74c3c', 'neutral': GRAY}
 
-    entities = data['entities']
+
+def _entity_panel(ax, entities, title, xlim, mark_stubs=False):
+    """Draw one leave-one-out entity-impact dot plot on ``ax``."""
+    # Sort impact-ascending so highest impact sits at the top of the panel.
+    entities = sorted(entities, key=lambda e: e['impact'])
     symbols = [e['symbol'] for e in entities]
     impacts = [e['impact'] for e in entities]
-    interpretations = [e['interpretation'] for e in entities]
+    colours = [INTERP_COLOUR.get(e.get('interpretation', 'neutral'), GRAY)
+               for e in entities]
 
-    fig, ax = plt.subplots(figsize=(7, 5))
+    ypos = list(range(len(symbols)))
+    ax.scatter(impacts, ypos, c=colours, s=90, edgecolor='black',
+               linewidth=0.8, zorder=10)
+    for y, impact, col in zip(ypos, impacts, colours):
+        ax.hlines(y, 0, impact, color=col, linewidth=1.4, alpha=0.5)
 
-    # Color by impact sign (positive = helps, negative = hurts)
-    colors = []
-    for impact in impacts:
-        if impact > 0:
-            colors.append('#2ecc71')  # Green - helps alignment
-        elif impact < 0:
-            colors.append('#e74c3c')  # Red - hurts alignment
-        else:
-            colors.append(GRAY)  # Gray - neutral (exactly zero)
+    # Explicit ticks (robust to draw timing) so stub-marking is deterministic.
+    labels = [s + ' *' if (mark_stubs and s in DROPPED_STUBS) else s
+              for s in symbols]
+    ax.set_yticks(ypos)
+    ax.set_yticklabels(labels)
+    ax.set_ylim(-0.7, len(symbols) - 0.3)
+    if mark_stubs:
+        for tick, sym in zip(ax.get_yticklabels(), symbols):
+            if sym in DROPPED_STUBS:
+                tick.set_color('#7b241c')
+                tick.set_fontweight('bold')
 
-    # Horizontal dot plot
-    ax.scatter(impacts, symbols, c=colors, s=150, edgecolor='black', linewidth=1, zorder=10)
-
-    # Connect to zero
-    for i, (sym, impact) in enumerate(zip(symbols, impacts)):
-        ax.hlines(sym, 0, impact, color=colors[i], linewidth=2, alpha=0.5)
-
-    # Zero line
     ax.axvline(0, color='black', linewidth=1.5)
+    ax.set_xlim(xlim)
+    ax.set_xlabel('Impact on alignment φ (leave-one-out Δφ)')
+    ax.set_title(title)
 
-    ax.set_xlabel('Impact on Alignment φ (Leave-One-Out)')
-    ax.set_ylabel('Asset')
-    ax.set_title('Entity-Level Alignment Impact')
 
-    # Legend - position outside plot area to avoid data collision
-    helps_patch = mpatches.Patch(color='#2ecc71', label='Helps alignment')
-    hurts_patch = mpatches.Patch(color='#e74c3c', label='Hurts alignment')
-    ax.legend(handles=[helps_patch, hurts_patch],
-              loc='upper center', bbox_to_anchor=(0.5, -0.12), ncol=2, frameon=False)
+def fig9_entity_impact(data_path: Path, output_path: Path):
+    """Two-panel entity-impact figure: contaminated n=37 vs content-verified n=43.
 
-    plt.tight_layout()
+    Left  -- earlier (contaminated) corpus: an apparent XMR/CRV/YFI ``helps''
+             ordering, anchored partly by failed-download stub documents.
+    Right -- content-verified corpus: no stable specialised-versus-infrastructure
+             ordering survives; the apparent split dissolves.
+    """
+    print("Generating Figure 9: Entity Impact (contaminated vs content-verified)...")
+
+    with open(data_path / "entity_impact_plot.json") as f:
+        clean = json.load(f)
+
+    contam_file = data_path / "entity_impact_plot_contaminated_n37.json"
+    contaminated = None
+    if contam_file.exists():
+        with open(contam_file) as f:
+            contaminated = json.load(f)
+
+    # Shared symmetric x-axis so magnitudes are directly comparable.
+    all_imp = [e['impact'] for e in clean['entities']]
+    if contaminated:
+        all_imp += [e['impact'] for e in contaminated['entities']]
+    span = max(abs(min(all_imp)), abs(max(all_imp)))
+    xlim = (-span * 1.18, span * 1.18)
+
+    if contaminated:
+        fig, (ax_l, ax_r) = plt.subplots(
+            1, 2, figsize=(13, 13), sharex=True)
+        n_c = len(contaminated['entities'])
+        n_k = len(clean['entities'])
+        _entity_panel(
+            ax_l, contaminated['entities'],
+            f'Earlier corpus (contaminated, n = {n_c})', xlim, mark_stubs=True)
+        _entity_panel(
+            ax_r, clean['entities'],
+            f'Content-verified corpus (n = {n_k})', xlim)
+        ax_l.set_ylabel('Asset')
+        fig.text(0.5, 0.045,
+                 '* failed-download stub / wrong-document files removed in '
+                 'content verification (absent from the verified corpus)',
+                 ha='center', fontsize=9, color='#7b241c')
+        handles = [
+            mpatches.Patch(color='#2ecc71', label='Helps alignment'),
+            mpatches.Patch(color=GRAY, label='Neutral (|Δφ| negligible)'),
+            mpatches.Patch(color='#e74c3c', label='Hurts alignment'),
+        ]
+        fig.legend(handles=handles, loc='lower center',
+                   bbox_to_anchor=(0.5, 0.005), ncol=3, frameon=False)
+        fig.suptitle('Entity-Level Alignment Impact: Contamination Reverses the '
+                     'Apparent Ordering', y=0.995)
+        plt.tight_layout(rect=(0, 0.07, 1, 0.98))
+    else:
+        # Fallback: single content-verified panel.
+        fig, ax = plt.subplots(figsize=(7, 14))
+        _entity_panel(ax, clean['entities'],
+                      f"Entity-Level Alignment Impact (n = {len(clean['entities'])})",
+                      xlim)
+        ax.set_ylabel('Asset')
+        handles = [
+            mpatches.Patch(color='#2ecc71', label='Helps alignment'),
+            mpatches.Patch(color=GRAY, label='Neutral (|Δφ| negligible)'),
+            mpatches.Patch(color='#e74c3c', label='Hurts alignment'),
+        ]
+        ax.legend(handles=handles, loc='upper center',
+                  bbox_to_anchor=(0.5, -0.08), ncol=3, frameon=False)
+        plt.tight_layout()
+
     plt.savefig(output_path / 'fig9_entity_impact.pdf', bbox_inches='tight')
     plt.savefig(output_path / 'fig9_entity_impact.png', bbox_inches='tight', dpi=300)
     plt.close()

@@ -1,0 +1,11 @@
+scenario,reliability,true_phi,power,power_se,recovered_phi_factor_cols,recovered_phi_pipeline,reps,perms
+ideal_reliability_1.0,1.0,0.2,0.3140,0.0208,0.2343,0.0469,500,200
+ideal_reliability_1.0,1.0,0.3,0.6180,0.0217,0.3063,0.0613,500,200
+ideal_reliability_1.0,1.0,0.5,0.9880,0.0049,0.5009,0.1002,500,200
+ideal_reliability_1.0,1.0,0.65,1.0000,0.0000,0.6559,0.1312,500,200
+ideal_reliability_1.0,1.0,0.8,1.0000,0.0000,0.8064,0.1613,500,200
+realistic_reliability_0.314,0.314,0.2,0.1040,0.0137,0.1775,0.0355,500,200
+realistic_reliability_0.314,0.314,0.3,0.2020,0.0180,0.2057,0.0411,500,200
+realistic_reliability_0.314,0.314,0.5,0.5160,0.0223,0.2833,0.0567,500,200
+realistic_reliability_0.314,0.314,0.65,0.7880,0.0183,0.3508,0.0702,500,200
+realistic_reliability_0.314,0.314,0.8,0.9600,0.0088,0.4476,0.0895,500,200
